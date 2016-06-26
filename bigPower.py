@@ -7,9 +7,9 @@ def sumNum(string):
 
 def calcNums(length):
 	maxNums = []
-	for i in range(0, length):
+	for i in range(5, length):
 		for k in range(0, length):
 			maxNums.append(sumNum(str(i**k)))
 	return max(maxNums)
 
-print(calcNums(100))
+print(calcNums(15))
